@@ -304,8 +304,8 @@ def pipeline(initial_poly, q, t, word):
         some_sindromes[i][0] = sindrom[i + r][0]
     neg_some_sindrom = operator.negate_matrix(some_sindromes)
 
-    print("$$")
-    print_poly_matrix_in_latex(neg_some_sindrom, False)
+    print("$$ -")
+    print_poly_matrix_in_latex(some_sindromes, False)
     print(r"\times")
     print_poly_matrix_in_latex(inverse_g_m, False)
     print("=")
